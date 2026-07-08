@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Quest Log</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="app">
+
+    <!-- ここが一番大事な「次にやること」カード -->
+    <section class="next-quest-card" id="nextQuestCard">
+      <!-- JavaScriptが中身を書き換えます -->
+    </section>
+
+    <!-- 達成率 -->
+    <section class="progress-section">
+      <div class="progress-label">
+        <span>達成率</span>
+        <span id="progressPercent">0%</span>
+      </div>
+      <div class="progress-track">
+        <div class="progress-fill" id="progressFill"></div>
+      </div>
+    </section>
+
+    <!-- 今週のQuest -->
+    <section class="quest-section">
+      <div class="section-head">
+        <span class="frame-index">ROLL 01</span>
+        <h2>今週のQuest</h2>
+      </div>
+      <ul class="quest-list" id="weeklyList"></ul>
+      <button class="add-quest-btn" data-scope="week">+ 今週のQuestを追加</button>
+    </section>
+
+    <!-- 今月のQuest -->
+    <section class="quest-section">
+      <div class="section-head">
+        <span class="frame-index">ROLL 02</span>
+        <h2>今月のQuest</h2>
+      </div>
+      <ul class="quest-list" id="monthlyList"></ul>
+      <button class="add-quest-btn" data-scope="month">+ 今月のQuestを追加</button>
+    </section>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
